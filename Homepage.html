@@ -42,7 +42,6 @@
             padding:0.5cm;
             width: 50%;
             margin:auto;
-
         }
         input[type=text] {
             background-color:rgb(200,200,200);
@@ -52,7 +51,7 @@
             padding: 12px 20px;
             margin: 8px 0;
             display: inline-block;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
             text-align: center;
@@ -78,13 +77,16 @@
             margin-right:auto;
         }
         #favorites {
-            width:66%;
+            width: max-content;
+            margin-top:0.5cm;
         }
         a > img {
             height:5em;
             margin:auto;
             align-self:center;
             padding-left:1cm;
+            padding-right:1cm;
+            
         }
 
         @media (max-width: 800px) {
@@ -99,7 +101,6 @@
             }
             a > img {
                 height: 3em;
-
             }
         }
     </style>
@@ -112,13 +113,15 @@
 
     <!--search bar here-->
     <div class="search">
-        <form method="get" action="https://www.duckduckgo.com/search">
+        <form method="get" action="https://www.duckduckgo.com/">
             <input id="searchbox" type="text" name="q" size="48" value="" autofocus>
         </form>
     </div>
     <div class="patch" id="favorites">
-            <a href="https://www.wunderground.com/weather/us/pa/greensburg"><img src="WU.png"></a>
             <a href="https://youtube.com/"><img src="youtube.avif"></a>
+            <a href="https://github.com"><img src="Github.png"></a>
+            <a href="https://reddit.com"><img src="Reddit.png"></a>
+            <a href="https://www.wunderground.com/weather/us/pa/greensburg"><img src="WU.png"></a>
     </div>
 </body>
 
