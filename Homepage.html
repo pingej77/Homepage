@@ -9,6 +9,7 @@
         body {
             height: 100%;
             margin: 0;
+            overflow: hidden;
             padding: 1cm;
             background-attachment: fixed;
             /* Tartan Clan Gunn background, inspired by https://projects.verou.me/css3patterns/#tartan */
@@ -30,7 +31,6 @@
             border:2px dashed #701818;
             box-shadow: 0 0 0 4px rgb(22,22,22), 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
             margin:auto;
-            margin-top:3%;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -55,22 +55,24 @@
             border-radius: 4px;
             box-sizing: border-box;
             text-align: center;
-            font-size:x-large;
+            font-size: large;
         }
         input:focus {
             outline: none !important;
             border: 2px solid rgb(35,71,54);
             box-shadow: 0 0 10px #719ECE;
         }
+        /* The 'Ping' of Ping search */
         #Ping {
-            height:3cm;
+            height: 100px;
             display:block;
             align-self: center;
             margin-left: auto;
             margin-right:auto;
         }
+        /* The 'search' of Ping search */
         #searchliteral {
-            height:1.5cm;
+            height:50px;
             display:block;
             align-self: center;
             margin-left: auto;
@@ -81,7 +83,7 @@
             margin-top:0.5cm;
         }
         a > img {
-            height:5em;
+            height:75px;
             margin:auto;
             align-self:center;
             padding-left:1cm;
@@ -100,7 +102,9 @@
                 font-size: small;
             }
             a > img {
-                height: 3em;
+                height: 50px;
+                display: block;
+                margin-top: 10px;
             }
         }
     </style>
