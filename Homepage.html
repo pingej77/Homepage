@@ -82,13 +82,38 @@
             width: max-content;
             margin-top:0.5cm;
         }
+        #sidebar1 {
+            width: 130px;
+            position: fixed;
+            z-index: 1;
+            top: 30px;
+            right: -15px;
+            overflow-x: hidden;
+            padding: 8px 0;
+        }
+        #sidebar2 {
+            width: 130px;
+            position: fixed;
+            z-index: 1;
+            bottom: 60px;
+            right: -15px;
+            overflow-x: hidden;
+            padding: 8px 0;
+        }
         a > img {
             height:75px;
             margin:auto;
             align-self:center;
             padding-left:1cm;
-            padding-right:1cm;
-            
+            padding-right:1cm;         
+        }
+        #sidebar1 > a > img {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        #sidebar2 > a > img {
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
 
         @media (max-width: 800px) {
@@ -123,10 +148,18 @@
     </div>
     <div class="patch" id="favorites">
             <a href="https://youtube.com/"><img src="youtube.avif"></a>
-			<a href="https://protonmail.com/"><img src="proton-mail-logo.png" style="height:60px;"></a>
             <a href="https://github.com"><img src="Github.png"></a>
             <a href="https://reddit.com"><img src="Reddit.png"></a>
             <a href="https://www.wunderground.com/weather/us/pa/greensburg"><img src="WU.png"></a>
+    </div>
+    <div class="patch" id="sidebar1">
+        <a href="https://protonmail.com/"><img src="proton-mail-logo.png" style="height:40px;"></a>
+        <a href="https://outlook.live.com/"><img src="Outlook.png" style="height:40px;"></a>
+        <a href="https://gmail.com"><img src="Gmail.png" style="height: 40px;"> </a>
+    </div>
+    <div class="patch" id="sidebar2">
+        <a href="https://dict.cc"><img src="Dict.png" style="height: 60px"></a>
+        <a href="https://translate.google.com"><img src="Google_Translate.png" style="height: 50px"></a>
     </div>
 </body>
 
